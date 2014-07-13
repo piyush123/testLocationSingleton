@@ -7,6 +7,7 @@
 //
 
 #import "singletonAppDelegate.h"
+#import "singletonViewController.h"
 
 @implementation singletonAppDelegate
 
@@ -14,6 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    UIViewController *uvc = [[singletonViewController alloc]init];
+    
+    
+    self.window.rootViewController = uvc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

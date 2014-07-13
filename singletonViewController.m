@@ -7,6 +7,7 @@
 //
 
 #import "singletonViewController.h"
+#import "LocationController.h"
 
 @interface singletonViewController ()
 
@@ -19,13 +20,25 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+       
+        [LocationController sharedInstance];
+        
+        [[LocationController sharedInstance].locationManager startUpdatingLocation];
     }
     return self;
+}
+
+- (void)locationUpdate:(CLLocation*)location;
+{
+    NSLog(@" getting location update in view %@", location);
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [LocationController sharedInstance].delegate = self;
     // Do any additional setup after loading the view from its nib.
 }
 

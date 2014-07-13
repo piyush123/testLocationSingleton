@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationController.h"
 
-@interface singletonViewController : UIViewController
+@interface singletonViewController : UIViewController <LocationControllerDelegate>
 
 @end

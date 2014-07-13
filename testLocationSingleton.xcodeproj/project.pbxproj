@@ -19,6 +19,9 @@
 		17E44E37197211B200F7571E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E44E1F197211B200F7571E /* UIKit.framework */; };
 		17E44E3F197211B200F7571E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17E44E3D197211B200F7571E /* InfoPlist.strings */; };
 		17E44E41197211B200F7571E /* testLocationSingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E44E40197211B200F7571E /* testLocationSingletonTests.m */; };
+		17E44E4C197211E500F7571E /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E44E4B197211E500F7571E /* LocationController.m */; };
+		17E44E531972135500F7571E /* singletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E44E511972135500F7571E /* singletonViewController.m */; };
+		17E44E541972135500F7571E /* singletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E44E521972135500F7571E /* singletonViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		17E44E3C197211B200F7571E /* testLocationSingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testLocationSingletonTests-Info.plist"; sourceTree = "<group>"; };
 		17E44E3E197211B200F7571E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17E44E40197211B200F7571E /* testLocationSingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testLocationSingletonTests.m; sourceTree = "<group>"; };
+		17E44E4A197211E500F7571E /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		17E44E4B197211E500F7571E /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		17E44E501972135500F7571E /* singletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singletonViewController.h; sourceTree = "<group>"; };
+		17E44E511972135500F7571E /* singletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singletonViewController.m; sourceTree = "<group>"; };
+		17E44E521972135500F7571E /* singletonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = singletonViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		17E44E0F197211B100F7571E = {
 			isa = PBXGroup;
 			children = (
+				17E44E501972135500F7571E /* singletonViewController.h */,
+				17E44E511972135500F7571E /* singletonViewController.m */,
+				17E44E521972135500F7571E /* singletonViewController.xib */,
 				17E44E21197211B200F7571E /* testLocationSingleton */,
 				17E44E3A197211B200F7571E /* testLocationSingletonTests */,
 				17E44E1A197211B200F7571E /* Frameworks */,
@@ -109,6 +120,8 @@
 			children = (
 				17E44E2A197211B200F7571E /* singletonAppDelegate.h */,
 				17E44E2B197211B200F7571E /* singletonAppDelegate.m */,
+				17E44E4A197211E500F7571E /* LocationController.h */,
+				17E44E4B197211E500F7571E /* LocationController.m */,
 				17E44E2D197211B200F7571E /* Images.xcassets */,
 				17E44E22197211B200F7571E /* Supporting Files */,
 			);
@@ -222,6 +235,7 @@
 			files = (
 				17E44E26197211B200F7571E /* InfoPlist.strings in Resources */,
 				17E44E2E197211B200F7571E /* Images.xcassets in Resources */,
+				17E44E541972135500F7571E /* singletonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +256,8 @@
 			files = (
 				17E44E2C197211B200F7571E /* singletonAppDelegate.m in Sources */,
 				17E44E28197211B200F7571E /* main.m in Sources */,
+				17E44E531972135500F7571E /* singletonViewController.m in Sources */,
+				17E44E4C197211E500F7571E /* LocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
