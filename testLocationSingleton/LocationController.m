@@ -51,6 +51,7 @@ static LocationController* sharedCLDelegate = nil;
 //    [self.delegate locationUpdate:newLocation];
     for (CLLocation *location in locations)
     {
+        [self.delegate locationUpdate:location];
         NSDate *now = [NSDate date];
         if ([location.timestamp compare:[NSDate dateWithTimeIntervalSinceNow:-600]])
         {

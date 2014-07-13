@@ -25,6 +25,6 @@
 @property (nonatomic, strong) CLLocation* location;
 @property (nonatomic, weak) id  delegate;
 
-+ (LocationController*)sharedInstance; // Singleton method
++ (LocationController*)sharedLocationController; // Singleton method
 
 @end

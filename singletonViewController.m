@@ -21,9 +21,9 @@
     if (self) {
         // Custom initialization
        
-        [LocationController sharedInstance];
+        [LocationController sharedLocationController];
         
-        [[LocationController sharedInstance].locationManager startUpdatingLocation];
+        [[LocationController sharedLocationController].locationManager startUpdatingLocation];
     }
     return self;
 }
@@ -38,7 +38,7 @@
 {
     [super viewDidLoad];
     
-    [LocationController sharedInstance].delegate = self;
+    [LocationController sharedLocationController].delegate = self;
     // Do any additional setup after loading the view from its nib.
 }
 
